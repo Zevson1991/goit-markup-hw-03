@@ -13,11 +13,11 @@
   box-sizing: border-box;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 body {
   margin: 0;
@@ -51,7 +51,7 @@ p {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0px;
 }
 
 /* Header */
@@ -247,10 +247,10 @@ p {
 .main-subtitle {
   display: block;
   width: 270px;
-  height: 72px;
   margin-bottom: 0;
 
   color: var(--color-secondary);
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -303,8 +303,9 @@ p {
   letter-spacing: 0.03em;
 }
 
-.img-workers {
-  margin-bottom: 30px;
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .workers {
@@ -318,7 +319,6 @@ p {
 }
 
 .professions {
-  padding-bottom: 30px;
   margin-bottom: 0;
 
   color: var(--color-secondary);
@@ -332,15 +332,12 @@ p {
 
 .footer {
   background-color: var(--color-background-hero-title);
-}
-
-.container-footer {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .logo-link-footer {
   display: block;
-  padding-top: 50px;
   
 
   color: var(--color-text-button);
@@ -393,16 +390,20 @@ p {
 
 /* Портфоліо кнопки */
 
+.section-portholio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .button-list {
   display: flex;
+  margin-bottom: 50px;
 
   justify-content: center;
 }
 
 
 .button-portfolio {
-  margin-top: 94px;
-  margin-bottom: 50px;
   margin-left: 8px;
   display: inline-block;
   padding: 6px 22px;
@@ -435,17 +436,19 @@ p {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
+  justify-content: flex-start;
 }
 
 .list-portholio-item {
   border: 1px solid #EEEEEE;
-  margin-bottom: 30px;
 }
 
-.portfolio-img {
-  margin-bottom: 20px;
-
+.list-porth-item-cont {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .progects {
